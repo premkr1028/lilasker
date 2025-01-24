@@ -5,8 +5,8 @@ import clientAddingRoute from "./routes/addClients.js";
 const app = express()
 const port = 3000
 
-app.use("/", registerRoute)
-app.use("/v1", clientAddingRoute)
+app.use("/v1", registerRoute)
+app.use("/v2", clientAddingRoute)
 app.get("/",(req,res) =>{
 res.send("megha")
 })
